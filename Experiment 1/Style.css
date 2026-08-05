@@ -1,1 +1,384 @@
+/* ==============================
+   Global Styles
+============================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+        radial-gradient(circle at top,#152238,#060b18 60%);
+
+    font-family:Verdana,Geneva,Tahoma,sans-serif;
+
+    color:#ffffff;
+
+    padding:25px;
+
+}
+
+/* ==============================
+   Main Layout
+============================== */
+
+.app-layout{
+
+    width:100%;
+
+    max-width:1200px;
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:25px;
+
+}
+
+/* ==============================
+   Sidebar
+============================== */
+
+.sidebar{
+
+    background:#101828;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:2px solid #00d9ff;
+
+    box-shadow:0 0 25px rgba(0,217,255,.25);
+
+}
+
+.logo-section{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.logo-section h1{
+
+    color:#00e5ff;
+
+    letter-spacing:3px;
+
+    font-size:2rem;
+
+    margin-bottom:8px;
+
+}
+
+.logo-section p{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+/* ==============================
+   Information Boxes
+============================== */
+
+.info-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.info-box{
+
+    background:#1b2638;
+
+    border-left:6px solid #00e5ff;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.info-box:hover{
+
+    transform:translateX(5px);
+
+    box-shadow:0 0 18px rgba(0,229,255,.25);
+
+}
+
+.info-box h3{
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+    margin-bottom:8px;
+
+}
+
+.info-box span{
+
+    color:#ffffff;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+}
+
+/* ==============================
+   Button
+============================== */
+
+.action-panel{
+
+    margin-top:35px;
+
+}
+
+.action-panel button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#00bcd4;
+
+    color:#08111e;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.action-panel button:hover{
+
+    background:#00e5ff;
+
+    transform:scale(1.03);
+
+}
+
+/* ==============================
+   Game Section
+============================== */
+
+.game-section{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.canvas-card{
+
+    background:#101828;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    border:2px solid #7c3aed;
+
+    box-shadow:0 0 30px rgba(124,58,237,.35);
+
+}
+
+#gameBoard{
+
+    background:#050816;
+
+    border:5px double #00e5ff;
+
+    border-radius:15px;
+
+    display:block;
+
+}
+
+/* ==============================
+   Popup
+============================== */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.82);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.popup-card{
+
+    width:340px;
+
+    background:#111827;
+
+    border:2px solid #00e5ff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    animation:popup .35s ease;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.75);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.popup-card h2{
+
+    color:#ff4d6d;
+
+    margin-bottom:18px;
+
+    letter-spacing:2px;
+
+}
+
+.popup-card p{
+
+    margin-bottom:22px;
+
+    font-size:20px;
+
+}
+
+.popup-card span{
+
+    color:#00ff88;
+
+    font-weight:bold;
+
+}
+
+.popup-card button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#00e5ff;
+
+    color:#08111e;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.popup-card button:hover{
+
+    background:#22ffff;
+
+}
+
+/* ==============================
+   Responsive
+============================== */
+
+@media(max-width:900px){
+
+.app-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+order:2;
+
+}
+
+.game-section{
+
+order:1;
+
+}
+
+#gameBoard{
+
+width:100%;
+
+height:auto;
+
+}
+
+}
