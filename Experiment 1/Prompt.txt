@@ -1,1 +1,46 @@
+Create a modern browser-based Snake game using HTML, CSS, and JavaScript.
 
+Requirements:
+
+• Separate the project into three files:
+  - index.html
+  - style.css
+  - script.js
+
+Design Style:
+
+• Use a futuristic cyberpunk theme instead of a classic arcade style.
+• Build a two-column responsive layout with a sidebar and a game area.
+• Use glowing neon colors (cyan, purple, pink) on a dark background.
+• Display score, snake length, game status, and best score inside futuristic information panels.
+• Style the canvas with glowing borders and subtle animated background effects.
+• Create an animated Game Over dialog with fade and scale transitions.
+• Use modern typography and spacing with rounded UI components.
+• Ensure the layout is completely different from a traditional centered-card design.
+
+Gameplay:
+
+• Control the snake using the Arrow keys.
+• Spawn food randomly.
+• Grow the snake after eating food.
+• Display the score in real time.
+• Detect collisions with walls and the snake itself.
+• Show a custom Game Over screen with the final score.
+• Allow restarting without refreshing the page.
+• Animate the snake movement smoothly using requestAnimationFrame.
+• Prevent food from spawning inside the snake.
+• Support responsive layouts for desktop and mobile screens.
+
+Coding Style:
+
+• Use meaningful class names and variable names.
+• Organize the JavaScript into reusable functions or classes.
+• Comment major sections of the code.
+• Keep HTML, CSS, and JavaScript clean and well structured.
+
+Output:
+
+Return three complete files:
+1. index.html
+2. style.css
+3. script.js
